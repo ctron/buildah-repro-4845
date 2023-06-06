@@ -1,11 +1,11 @@
 Works:
 
 ```shell
-podman build -f some/dir/Containerfile .
+podman build -f Containerfile .
 ```
 
 Fails:
 
 ```shell
-buildah bud -f some/dir/Containerfile --format docker .
+buildah bud -f Containerfile --format docker .
 ```

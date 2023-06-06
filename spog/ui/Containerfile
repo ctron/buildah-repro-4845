@@ -1,0 +1,11 @@
+FROM ghcr.io/ctron/trunk:latest
+
+RUN mkdir /usr/src/trustification
+
+COPY . /usr/src/trustification
+
+RUN ls /usr/src/trustification
+
+WORKDIR /usr/src/trustification/spog/ui
+
+RUN test -f foo.txt

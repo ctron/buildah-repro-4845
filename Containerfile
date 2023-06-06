@@ -1,6 +1,5 @@
 FROM registry.access.redhat.com/ubi9/ubi:latest as base
 
-RUN install -m 0777 -d /usr/src
 VOLUME /usr/src/
 
 FROM base
